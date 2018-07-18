@@ -1,0 +1,35 @@
+{
+  "name": "eslint-config",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "description": "ESLint config",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "files": [
+    "dist/index.js",
+    "package.json"
+  ],
+  "scripts": {
+    "build": "rimraf dist/ && babel src/ --out-dir dist/"
+  },
+  "peerDependencies": {
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-babel": "^5.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-preset-env": "1.6.0",
+    "rimraf": "2.6.2"
+  },
+  "maintainers": [
+    {
+      "name": "Tyson Louth",
+      "email": "tysonlouth@gmail.com"
+    }
+  ],
+  "license": "MIT"
+}
